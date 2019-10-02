@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <script src="//bowercdn.net/c/jquery-1.11.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jwplayer.com/libraries/asmi2gLG.js"></script>
+    <script src="./player.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body style="background: #000;">
+<div id="screenshot" style="display: none;"></div>
+<div id="container">
+    <div style="position: relative; top: 50%; margin-top: -7px;" id="message">
+        <img src="./play_white.png" alt="Reproducir" style="cursor: pointer; margin-top: -64px;" id="start" />
+    </div>
+    <div id="player"></div>
+</div>
+
+<script>
+    var player;
+    var m3u8_path = "./ts";
+</script>
+</body>
+
+</html>

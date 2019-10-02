@@ -1,0 +1,81 @@
+        html,
+        body,
+        #container {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            color: #fff;
+            overflow: hidden
+        }
+
+        #container {
+            position: absolute;
+            text-align: center
+        }
+
+        video {
+            outline: 0
+        }
+
+        div#screenshot.abierto {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block !important;
+    background: #000;
+    z-index: 81;
+    animation: modal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    text-align: center;
+}
+#downloadButton a {
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+div#screenshot.abierto img {-webkit-transform: translate(-50%,0%);transform: translate(-50%,0%);position: fixed;max-width: 80%;width: 90%;color: #5A5A5A;padding: 10px;top: 80px;bottom: 0;margin: auto;z-index: 81;background: #515151;padding: 0;}
+#close-lightbox {
+  position: absolute;
+  right: 32px;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  z-index: 82;
+}
+#close-lightbox:hover {
+  opacity: 0.5;
+}
+#close-lightbox:before, #close-lightbox:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #ffffff;
+}
+#close-lightbox:before {
+  transform: rotate(45deg);
+}
+#close-lightbox:after {
+  transform: rotate(-45deg);
+}
+
+
+#screenshot h4, #screenshot h3 {
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+    z-index: 82;
+    position: relative;
+    background: rgba(0, 0, 0, 0.35);
+    font-family: arial;
+}
+#screenshot h4 {
+  padding: 0px 15px 9px 15px;
+}
+#screenshot h3 {
+  padding: 20px 15px 3px 15px;
+}
